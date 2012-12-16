@@ -1,0 +1,17 @@
+escape ^z^z #Ctrl + z
+defencoding UTF-8 # or SJIS or UTF-8 or eucJP
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+startup_message off
+vbell off
+autodetach on
+shelltitle "$ |bash"
+defscrollback 5000
+bind ^z other
+bind o other
+ 
+termcapinfo xterm* ti@:te@
+ 
+#Log
+logfile "/home/yokumura/log/screen-%Y%m%d-%n.log"
+#log on
+#deflog on
